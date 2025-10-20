@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A-I Speak! - 설정</title>
+  <link rel="stylesheet" href="../style/common.css">
+  <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+  <main class="settings-page">
+    <section class="card control">
+      <h2>▶ 언어를 선택하세요!</h2>
+      <div class="btn-row">
+        <button class="pill lang active" data-lang="ko">한국어</button>
+        <button class="pill lang" data-lang="en">영어</button>
+      </div>
+    </section>
+
+    <section class="card control">
+      <h2>▶ 단계를 설정해주세요!</h2>
+      <div class="btn-row">
+        <button class="pill step active" data-step="short">Short</button>
+        <button class="pill step" data-step="long">Long</button>
+      </div>
+    </section>
+
+    <section class="card categories">
+      <h2>▶ 좋아하는 글귀의 카테고리를 설정해주세요!</h2>
+      <ul id="categoryList" class="category-grid">
+        <li><button class="cat">명언</button></li>
+        <li><button class="cat">서적</button></li>
+        <li><button class="cat">영화/드라마</button></li>
+        <li><button class="cat">음악/가사</button></li>
+        <li><button class="cat">뉴스/시사</button></li>
+        <li><button class="cat">sns/트렌드</button></li>
+        <li><button class="cat">철학/사유</button></li>
+        <li><button class="cat">일상/감정</button></li>
+      </ul>
+    </section>
+
+    <div class="actions">
+      <button id="beginBtn" class="start-pill">시작하기</button>
+    </div>
+
+    <div id="alertBox" class="alert" role="alert" aria-live="assertive" hidden>
+      최소 1개의 카테고리를 선택해주세요!
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
