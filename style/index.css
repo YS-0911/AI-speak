@@ -1,6 +1,8 @@
 /* index.css - page specific styles */
 .intro{
-  height:70vh;
+  margin: 0;
+  height:100vh;
+  width: 100vw;
   border-radius:6px;
   background:#a9d0ff;
   display:flex;
@@ -36,6 +38,7 @@
   font-weight:700
 }
 .settings-page{
+  max-width:980px;
   padding:24px
 }
 .settings-page .control{
@@ -57,6 +60,7 @@
 }
 /* loading / mid screens */
 .loading-wrap{
+  max-width:980px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -87,6 +91,7 @@
 
 /* ai talk screen */
 .ai-screen{
+  max-width:980px;
   padding:40px;
   text-align:center
 }
@@ -133,6 +138,7 @@
 
 /* result screen */
 .result-wrap{
+  max-width:980px;
   padding:40px
 }
 .result-card{

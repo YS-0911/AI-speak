@@ -1,4 +1,3 @@
-// main.js - UI interactions (design-only, no back-end)
 document.addEventListener('DOMContentLoaded', function(){
   // index -> sub navigation
   const startBtn = document.getElementById('startBtn');
@@ -129,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function(){
     `;
     const nb = document.getElementById('nextBtn');
     nb.addEventListener('click', ()=> {
-      alert('디자인 흐름 끝 — 실제 기능은 구현되어 있지 않습니다.');
+      alert('데시보드 제작중...');
     });
   }
 
