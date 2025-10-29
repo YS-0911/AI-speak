@@ -9,15 +9,26 @@
 </head>
 <body>
   <main class="intro">
-    <h1 class="title">A-I Speak!</h1>
+    <div class="wrap">
+      <h1 class="title">AI Speak!</h1>
+    </div>
 
     <button id="startBtn" class="play-btn" aria-label="Start">
-      <span class="play-icon">▶</span>
+      <span class="play-icon"> ▶</span>
     </button>
 
     <p class="hint">버튼을 눌러 글을 생성하세요!</p>
   </main>
 
-  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const startBtn = document.getElementById('startBtn');
+      if(startBtn){
+        startBtn.addEventListener('click', function(){
+          window.location.href = 'sub/subpage.html';
+        });
+      }
+    });
+  </script>
 </body>
 </html>
