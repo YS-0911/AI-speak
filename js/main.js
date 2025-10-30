@@ -143,8 +143,8 @@ document.addEventListener('DOMContentLoaded', function(){
         </div>
         
         <div class="next-row">
-          <a href="../index.html" class="btn">처음으로</a>
-          <button class="btn" id="next-btn">다음으로</button>
+          <a href="../index.html" class="btn">처음<br>으로</a>
+          <button class="btn" id="next-btn">다음<br>으로</button>
         </div>
       </div>
     `;
