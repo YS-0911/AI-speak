@@ -104,6 +104,9 @@
   .next-row {
     gap: 40px;
   }
+  .next-row > a {
+    padding: 22px;
+  }
   .btn {
   width: 70px;
   height: 70px;

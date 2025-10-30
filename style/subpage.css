@@ -321,6 +321,9 @@ main {
   gap: 100px;
 }
 
+.next-row > a {
+  padding: 24px;
+}
 .btn {
   width: 100px;
   height: 100px;
