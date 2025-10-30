@@ -24,7 +24,8 @@ a {
 }
 
 html, body {
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   margin: 0;
   background: var(--bg);
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -36,6 +37,5 @@ button {
 }
 
 main {
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0;
 }

@@ -1,0 +1,112 @@
+@media (max-width:769px) {
+  .title {
+    font-size: 5rem;
+  }
+  .play-btn {
+    width: 170px;
+    height: 170px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .camera-box {
+    height: 50%;
+  }
+  .mic-hint {
+    font-size: 1rem;
+  }
+  .main-title {
+    padding: 0;
+  }
+  
+  .result-text{
+    font-size: 1.4rem;
+  }
+  .result-card {
+    height: 400px;
+  }
+  .emoji-display {
+    font-size: 5rem;
+  }
+  .accuracy-display {
+    font-size: 5rem;
+    line-height: 300px;
+  }
+}
+
+
+@media (max-width:426px) {
+  .title {
+    font-size: 3rem;
+  }
+  .play-btn {
+    width: 100px;
+    height: 100px;
+  }
+  .intro > .hint {
+    font-size: 1.2rem;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+    height: 40px;
+    line-height: 40px;
+  }
+  .second-title {
+    font-size: 0.6rem;
+  }
+  .card h2 {
+    font-size: 0.9rem;
+  }
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cat, .pill {
+    font-size: 0.6rem;
+  }
+  .start-pill {
+    width: 70px;
+    height: 70px;
+    font-size: 0.56rem;
+  }
+
+  .camera-box {
+    height: 50%;
+  }
+  .mic-hint {
+    font-size: 0.8rem;
+  }
+  #generatedText {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .result-text{
+    font-size: 1rem;
+  }
+  .result-card {
+    height: 300px;
+  }
+  .result-area {
+    font-size: 0.7rem;
+  }
+  .result-area > h3 {
+    font-size: 1rem;
+  }
+  .emoji-display {
+    font-size: 2.8rem;
+  }
+  .accuracy-display {
+    font-size: 3rem;
+    line-height: 200px;
+  }
+  .next-row {
+    gap: 40px;
+  }
+  .btn {
+  width: 70px;
+  height: 70px;
+  font-size: 0.6rem;
+}
+}

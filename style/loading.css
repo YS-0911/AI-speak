@@ -1,0 +1,55 @@
+/* ----- 로딩 페이지 ----- */
+/* 글 생성 로딩 */
+.loading-wrap {
+  max-width: 980px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.progress {
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: 28px;
+  padding: 6px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: var(--soft-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress .bar {
+  height: 44px;
+  border-radius: 22px;
+  background: var(--accent);
+  width: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-bg);
+  font-weight: 600;
+  transition: width 2s ease;
+  box-shadow: var(--shadow);
+}
+
+/* 분석 로딩 */
+.loading-center {
+  text-align: center;
+}
+
+.generated-text {
+  display: inline-block;
+  background: var(--pill);
+  padding: 18px 28px;
+  border-radius: 12px;
+  box-shadow: var(--soft-shadow);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  font-size: 24px;
+  color: var(--card-bg);
+}

@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function(){
   // 디자인 미리보기를 위한 간단한 시뮬레이션 내비게이션:
   function showGeneratingScreen(activeTexts){
     // 문서 내용을 로딩 화면으로 대체 (design-only)
-    document.body.innerHTML = `
-      <main class="loading-wrap">
+    document.getElementById('settings-page').innerHTML = `
+      <div class="loading-wrap">
         <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
           <div class="bar" id="genBar">AI GENERATING...</div>
         </div>
-      </main>
+      </div>
     `;
     // 진행 상황 애니메이션을 만든 다음 AI 화면으로 이동합니다
     setTimeout(()=> {
@@ -77,13 +77,13 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   function goToAiScreen(activeTexts){
-    document.body.innerHTML = `
-      <main class="ai-screen">
+    document.getElementById('settings-page').innerHTML = `
+      <div class="ai-screen">
+        <div class="mic-hint">마이크 버튼을 누르고 아래 문장을 따라 읽어보세요!</div>
         <div class="generated-text" id="generatedText">나는 생각한다, 고로 존재한다.</div>
         <div class="camera-box"><img src="" id="cameraImg" alt="영상 녹화하는 위치 ${activeTexts} : 테스트 후 수정하기"></div>
         <button class="mic-btn" id="micBtn" aria-pressed="false" title="녹음 시작/정지">🎤</button>
-        <div class="mic-hint">버튼을 클릭하면 시작합니다!</div>
-      </main>
+      </div>
     `;
     // 분석 화면으로 이동하려면 마이크 버튼을 클릭합니다 (design-only)
     const mb = document.getElementById('micBtn');
@@ -94,39 +94,64 @@ document.addEventListener('DOMContentLoaded', function(){
       mb.setAttribute('aria-pressed', recording ? 'true' : 'false');
       if(!recording){
         // 녹음 중지 시뮬레이션 -> 분석으로 이동합니다
-        showAnalyzingScreen();
+        showAnalyzingScreen(activeTexts);
       }
     });
   }
 
-  function showAnalyzingScreen(){
-    document.body.innerHTML = `
-      <main class="loading-wrap">
+  function showAnalyzingScreen(activeTexts){
+    document.getElementById('settings-page').innerHTML = `
+      <div class="loading-wrap">
         <div class="loading-center">
           <div class="loading-text">AI가 열심히 분석중입니다...</div>
         </div>
-      </main>
+      </div>
     `;
-    setTimeout(()=> showResultScreen(), 1400);
+    setTimeout(()=> showResultScreen(activeTexts), 1400);
   }
 
-  function showResultScreen(){
-    document.body.innerHTML = `
-      <main class="result-wrap">
-        <div class="generated-text">나는 생각한다, 고로 존재한다.</div>
+  function showResultScreen(activeTexts){
+    // 정확도에 따른 이모티콘 선택
+    let emoji = "";
+    let accuracyPercent = 80;
+    if (accuracyPercent < 50) emoji = "😭";
+    else if (accuracyPercent < 70) emoji = "😊";
+    else emoji = "😃";
+
+    document.getElementById('settings-page').innerHTML = `
+      <div class="result-wrap">
+        <div class="result-text">목표 문장 : <span>나는 생각한다, 고로 존재한다.</span></div>
+
         <div class="result-card">
-          <h3>정확도 결과</h3>
-          <ul>
-            <li>
-              80%
-            </li>
-          </ul>
+          <div class="result-area emoji-area">
+            <h3>말하기 결과</h3>
+            <div class="emoji-display">${emoji}</div>
+            <div class="emoji-explane">
+              <ul>
+                <p>정확도</p>
+                <li>70% 이상 : 😃</li>
+                <li>50% 이상 : 😊</li>
+                <li>50% 미만 : 😭</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="result-area accuracy-area">
+            <h3>정확도</h3>
+            <div class="accuracy-display">${accuracyPercent}%</div>
+          </div>
         </div>
+        
         <div class="next-row">
-          <button class="next-btn"><a href="">처음으로</a></button>
+          <button class="btn"><a href="./subpage.html">처음으로</a></button>
+          <button class="btn" id="next-btn">다음으로</button>
         </div>
-      </main>
+      </div>
     `;
+    const next_btn = document.getElementById('next-btn')
+    next_btn.addEventListener('click',()=>{
+      console.log('선택된 항목:', activeTexts);
+      showGeneratingScreen(activeTexts);
+    })
   }
-
 });
