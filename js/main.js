@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function(){
         </div>
         
         <div class="next-row">
-          <button class="btn"><a href="./subpage.html">처음으로</a></button>
+          <button class="btn"><a href="../index.html">처음으로</a></button>
           <button class="btn" id="next-btn">다음으로</button>
         </div>
       </div>
