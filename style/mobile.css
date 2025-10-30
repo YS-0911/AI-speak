@@ -82,14 +82,23 @@
     font-size: 1.2rem;
   }
 
+  .loading-text {
+    font-size: 1rem;
+  }
+
   .result-text{
     font-size: 1rem;
   }
   .result-card {
-    height: 300px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .result-area {
     font-size: 0.7rem;
+    width: 100%;
   }
   .result-area > h3 {
     font-size: 1rem;
