@@ -1,0 +1,175 @@
+{
+  "명언": [
+    {
+      "sentence": "노력은 배신하지 않는다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "노력은", "phonemes": ["ㅗ"]},
+        {"word": "배신하지", "phonemes": ["ㅏ", "ㅣ", "ㅏ", "ㅣ"]},
+        {"word": "않는다", "phonemes": ["ㅏ"]}
+      ]
+    },
+    {
+      "sentence": "실패는 성공의 어머니이다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "실패는", "phonemes": ["ㅣ", "ㅏ"]},
+        {"word": "성공의", "phonemes": ["ㅗ"]},
+        {"word": "어머니이다", "phonemes": ["ㅏ", "ㅣ", "ㅣ", "ㅏ"]}
+      ]
+    }
+  ],
+  "서적/문학": [
+    {
+      "sentence": "그는 바다를 바라보았다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "바다를", "phonemes": ["ㅏ", "ㅏ"]},
+        {"word": "바라보았다", "phonemes": ["ㅏ", "ㅏ", "ㅗ", "ㅏ"]}
+      ]
+    },
+    {
+      "sentence": "마음이 깊은 사람은 말이 적다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "마음이", "phonemes": ["ㅏ", "ㅣ"]},
+        {"word": "깊은", "phonemes": ["ㅣ", "ㅜ"]},
+        {"word": "사람은", "phonemes": ["ㅏ", "ㅏ"]},
+        {"word": "말이", "phonemes": ["ㅏ", "ㅣ"]}
+      ]
+    }
+  ],
+  "영화/드라마": [
+    {
+      "sentence": "사랑은 돌아오는 거야.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "사랑은", "phonemes": ["ㅏ", "ㅏ"]},
+        {"word": "돌아오는", "phonemes": ["ㅗ", "ㅏ", "ㅗ"]}
+      ]
+    },
+    {
+      "sentence": "나는 아직도 너를 기다려.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "나는", "phonemes": ["ㅏ"]},
+        {"word": "아직도", "phonemes": ["ㅏ", "ㅗ"]},
+        {"word": "기다려", "phonemes": ["ㅣ", "ㅏ"]}
+      ]
+    }
+  ],
+  "음악/가사": [
+    {
+      "sentence": "바람이 불어와 내 마음 흔들어놔.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "바람이", "phonemes": ["ㅏ", "ㅏ", "ㅣ"]},
+        {"word": "불어와", "phonemes": ["ㅜ", "ㅗ", "ㅏ"]},
+        {"word": "마음", "phonemes": ["ㅏ"]}
+      ]
+    },
+    {
+      "sentence": "너의 의미를 이제야 알겠어.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "의미를", "phonemes": ["ㅣ"]},
+        {"word": "이제야", "phonemes": ["ㅣ", "ㅏ"]},
+        {"word": "알겠어", "phonemes": ["ㅏ", "ㅗ"]}
+      ]
+    }
+  ],
+  "뉴스/시사": [
+    {
+      "sentence": "정부는 새로운 방안을 발표했다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "정부는", "phonemes": ["ㅜ"]},
+        {"word": "방안을", "phonemes": ["ㅏ"]},
+        {"word": "발표했다", "phonemes": ["ㅏ", "ㅗ"]}
+      ]
+    },
+    {
+      "sentence": "물가 상승세가 이어지고 있다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "물가", "phonemes": ["ㅜ", "ㅏ"]},
+        {"word": "상승세가", "phonemes": ["ㅏ"]},
+        {"word": "이어지고", "phonemes": ["ㅣ", "ㅗ"]}
+      ]
+    }
+  ],
+  "SNS/트렌드": [
+    {
+      "sentence": "요즘 너무 바빠서 잠이 부족해.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "요즘", "phonemes": ["ㅗ"]},
+        {"word": "너무", "phonemes": ["ㅜ"]},
+        {"word": "바빠서", "phonemes": ["ㅏ", "ㅏ"]},
+        {"word": "잠이", "phonemes": ["ㅣ"]}
+      ]
+    },
+    {
+      "sentence": "오늘도 피드 폭탄이야.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "오늘도", "phonemes": ["ㅗ", "ㅗ"]},
+        {"word": "피드", "phonemes": ["ㅣ"]},
+        {"word": "폭탄이야", "phonemes": ["ㅗ", "ㅏ", "ㅣ", "ㅏ"]}
+      ]
+    }
+  ],
+  "철학/사유": [
+    {
+      "sentence": "나는 누구인가.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "나는", "phonemes": ["ㅏ"]},
+        {"word": "누구인가", "phonemes": ["ㅜ", "ㅣ", "ㅏ"]}
+      ]
+    },
+    {
+      "sentence": "존재의 이유를 묻다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "이유를", "phonemes": ["ㅣ", "ㅜ"]},
+        {"word": "묻다", "phonemes": ["ㅜ"]}
+      ]
+    }
+  ],
+  "일상/감정": [
+    {
+      "sentence": "오늘은 너무 피곤하다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "오늘은", "phonemes": ["ㅗ"]},
+        {"word": "너무", "phonemes": ["ㅜ"]},
+        {"word": "피곤하다", "phonemes": ["ㅣ", "ㅏ"]}
+      ]
+    },
+    {
+      "sentence": "마음이 포근해진다.",
+      "level" : "Short",
+      "language" : "한국어",
+      "words": [
+        {"word": "마음이", "phonemes": ["ㅏ", "ㅣ"]},
+        {"word": "포근해진다", "phonemes": ["ㅗ", "ㅣ", "ㅏ"]}
+      ]
+    }
+  ]
+}
